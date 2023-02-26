@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="12dp"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                app:srcCompat="@drawable/blood_pressure_image" />
+
+            <EditText
+                android:id="@+id/edt_username"
+                style="@style/style_edt"
+                android:hint="Username"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/tv_error_username"
+                style="@style/style_tv_error" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/edt_password"
+                    style="@style/style_edt"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_error_password"
+                style="@style/style_tv_error" />
+
+            <Button
+                android:id="@+id/bt_sign_in"
+                style="@style/style_bt"
+                android:text="Sign In" />
+
+            <Button
+                android:id="@+id/bt_sign_up"
+                style="@style/style_bt"
+                android:text="No account yet? Create one" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

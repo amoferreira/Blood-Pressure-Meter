@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Blood Pressure Meter</string>
+    <string name="app_version">Version 2.0.0</string>
+    <string name="tv_time"><b>Date and Hour</b>\n(yyyy-mm-dd)\n(hh:mm:ss)</string>
+    <string name="tv_dp"><b>Diastolic Pressure</b>\n(mmHg)</string>
+    <string name="tv_sp"><b>Systolic Pressure</b>\n(mmHg)</string>
+    <string name="tv_hr"><b>Heart Rate</b>\n(beats per min)</string>
+    <string name="tv_level"><b>Level</b>\n</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string-array name="number_of_days">
+        <item>All</item> <!-- 0-->
+        <item>Today</item> <!-- 1 -->
+        <item>Last 3 days</item> <!-- 2 -->
+        <item>Last 5 days</item> <!-- 3 -->
+        <item>Last Week</item> <!-- 4 -->
+        <item>Last Month</item> <!-- 5 -->
+        <item>Last Year</item> <!-- 6-->
+    </string-array>
+    <string name="help_info">
+        <b><big>What can you do with Blood Pressure Meter?</big></b>
+        \n\n\t This app will help you track your blood pressure and heart rate whenever you want, alerting for some measurements that are not in normal limits.
+        \n\n\t In the first screen, you should at first create an account and then sign in. After making your registration you can add your new values, reading a QR code that contains them.
+        \n\n\t You can also analyse all your readings in the history section, and see this results presented in a graph, in the statistics section, where you can select which data you want to see, for example, from the last week, month or year.\n\n\t
+    </string>
+
+    <string name="my_profile">See my profile</string>
+    <string name="sign_out">Sign out</string>
+
+</resources>

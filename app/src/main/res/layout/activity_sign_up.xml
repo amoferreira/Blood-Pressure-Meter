@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="12dp"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    tools:context=".SignUpActivity">
+
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/red_1"
+        android:text="Sign Up Form"
+        android:textAlignment="center"
+        android:textColor="@color/blue_1"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:text="Username:"
+                style="@style/style_tv_title" />
+
+            <EditText
+                android:id="@+id/edt_username_sup"
+                android:hint="Username"
+                android:inputType="text"
+                style="@style/style_edt" />
+
+            <TextView
+                android:id="@+id/tv_error_username_sup"
+                style="@style/style_tv_error"/>
+
+            <TextView
+                android:id="@+id/tv_password"
+                android:text="Password:"
+                style="@style/style_tv_title"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/edt_password_sup"
+                    style="@style/style_edt"
+                    android:hint="Password"
+                    android:inputType="textPassword"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_error_password_sup"
+                style="@style/style_tv_error" />
+
+            <TextView
+                android:id="@+id/tv_confirm_password"
+                android:text="Confirm Password:"
+                style="@style/style_tv_title"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/edt_confirm_password_sup"
+                    style="@style/style_edt"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_error_confirm_password_sup"
+                style="@style/style_tv_error"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:text="Name:"
+                style="@style/style_tv_title"/>
+
+            <EditText
+                android:id="@+id/edt_name_sup"
+                style="@style/style_edt"
+                android:hint="Name"
+                android:inputType="text"/>
+
+            <TextView
+                android:id="@+id/tv_error_name_sup"
+                style="@style/style_tv_error" />
+
+            <TextView
+                android:id="@+id/tv_gender"
+                android:text="Gender:"
+                style="@style/style_tv_title"/>
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female"
+                    android:checked="true"/>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/male" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_error_gender_sup"
+                style="@style/style_tv_error" />
+
+            <TextView
+                android:id="@+id/tv_birth_date"
+                android:text="Birth Date:"
+                style="@style/style_tv_title"/>
+
+            <EditText
+                android:id="@+id/edt_birth_date_sup"
+                android:ems="10"
+                android:hint="DD/MM/YYYY"
+                android:inputType="date"
+                style="@style/style_edt"
+                android:focusable="false"/>
+
+            <TextView
+                android:id="@+id/tv_error_birth_date_sup"
+                style="@style/style_tv_error"/>
+
+            <Button
+                android:id="@+id/bt_register_sup"
+                style="@style/style_bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Next" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
